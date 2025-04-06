@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>EduBridge</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <nav>
+      <h1>EduBridge</h1>
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#scholarship">Scholarships</a></li>
+        <li><a href="#crowdfunding">Crowdfunding</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h2>Breaking Financial Barriers to Education</h2>
+    <p>Empowering students through scholarships, donations, and smart technology.</p>
+  </section>
+
+  <section id="about">
+    <h3>About EduBridge</h3>
+    <p>EduBridge is a platform to connect students in need with financial support, scholarships, and donors.</p>
+  </section>
+
+  <section id="scholarship">
+    <h3>Scholarship Finder</h3>
+    <form onsubmit="return handleFormSubmit(event)">
+      <label for="course">Course:</label>
+      <input type="text" id="course" name="course" required>
+      <label for="location">Location:</label>
+      <input type="text" id="location" name="location" required>
+      <button type="submit">Find Scholarships</button>
+    </form>
+  </section>
+
+  <section id="crowdfunding">
+    <h3>Student Crowdfunding</h3>
+    <div class="card-container">
+      <div class="card">
+        <h4>Aarav, 2nd Year BTech</h4>
+        <p>Needs support to pay college fees due to family crisis.</p>
+        <button onclick="donate('Aarav')">Donate</button>
+      </div>
+      <div class="card">
+        <h4>Sana, 1st Year MBBS</h4>
+        <p>Seeking help to buy medical textbooks and equipment.</p>
+        <button onclick="donate('Sana')">Donate</button>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>©️ 2025 EduBridge | Empowering Futures</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
